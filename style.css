@@ -1,0 +1,28 @@
+*{margin:0;padding:0;list-style:none;}
+body{
+  animation: change-color 2.5s ease-in infinite;
+}
+@keyframes change-color {
+  0% {background-color: #faedcd;} 
+  50%{background-color: #ccd5ae;} 
+  100% {background-color: #faedcd;} 
+}
+@keyframes change-box {
+  0% {scale: 100%;box-shadow: 10px 10px 50px #00000055;} 
+  50%{scale: 50%;box-shadow: 0px 0px 0px #00000055;} 
+  100% {scale: 100%;box-shadow: 10px 10px 50px #00000055;} 
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10vw;
+  font-size:48px;
+}
+.box{
+  width: 200px;
+  height:200px;
+  background-color: #d4a373;
+  animation: change-box 5s ease-in-out infinite;
+}
